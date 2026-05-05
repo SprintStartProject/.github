@@ -1,3 +1,3 @@
-# 🚀 SprintStart - An AI-Powered Multi-Agent Platform for Software Project Onboarding & Training
+# 🚀 SprintStart - A Multi-Agent AI Platform for Software Project Onboarding & Training
 SprintStart is an AI-powered onboarding and training platform designed to support software teams by transforming scattered project artifacts into actionable, personalized project knowledge. The platform connects to a team’s existing tool landscape (e.g., documentation systems, issue trackers, and source code repositories) and uses locally hosted large language models combined with retrieval-augmented generation to provide reliable, artifact-grounded answers to project-specific questions.
 Visit also the [SprintStart documentation](https://sprintstart.readthedocs.io/en/latest/).
