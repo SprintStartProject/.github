@@ -1,0 +1,89 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in SprintStart
+title: "[Bug]: "
+labels: ["bug", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Remove any sensitive data (credentials, tokens, Personal Data) before submitting.**
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the bug...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: Include error messages or screenshots if relevant.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected Component
+      options:
+        - Frontend
+        - Backend API
+        - AI / RAG Pipeline
+        - Ingestion Pipeline
+        - Auth / Access Control
+        - CI / DevOps
+        - Documentation
+        - Unknown / Multiple
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, browser, branch, or commit hash if relevant.
+      placeholder: "e.g. macOS 14, Chrome 124, main @ abc1234"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Screenshots
+      description: Paste relevant logs here. Attach screenshots if helpful.
+      render: shell
+
+  - type: textarea
+    id: cause
+    attributes:
+      label: Possible Cause
+      description: Optional — any hypothesis on what might be causing this?
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues / PRs
+      description: "e.g. #42, SS-007"
