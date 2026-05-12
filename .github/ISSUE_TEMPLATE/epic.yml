@@ -1,0 +1,78 @@
+name: Epic
+description: A larger body of work that contains multiple user stories
+title: "[Epic]: "
+labels: ["epic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for epics — larger themes that span multiple user stories.
+        Individual user stories will be linked as **sub-issues** of this epic.
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal / Outcome
+      description: What should be achieved? What is the business value?
+      placeholder: e.g. Users can register and log in securely; login-related support tickets drop by 50%.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Background / Motivation
+      description: Why is this epic relevant now? What problem does it solve?
+      placeholder: Currently there is no central authentication; each module handles logins differently.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: In Scope
+      description: What is included in this epic?
+      value: |
+        - 
+        - 
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      description: What is explicitly NOT part of this epic?
+      value: |
+        - 
+    validations:
+      required: false
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria / Definition of Done
+      description: How do we know the epic is complete? Use measurable criteria.
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies / Risks
+      description: Other epics, technical prerequisites, or known risks
+      placeholder: Depends on Epic #42; requires Auth Service v2
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Next steps after creating this epic:**
+        1. Set the issue type to `Epic` in the right sidebar (if available)
+        2. Assign it to the relevant project
+        3. Link or create user stories via the **Sub-issues** section
