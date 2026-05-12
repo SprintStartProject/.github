@@ -16,7 +16,7 @@ body:
       description: What should be achieved? What is the business value?
       placeholder: e.g. Users can register and log in securely; login-related support tickets drop by 50%.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: motivation
@@ -25,7 +25,7 @@ body:
       description: Why is this epic relevant now? What problem does it solve?
       placeholder: Currently there is no central authentication; each module handles logins differently.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: scope
