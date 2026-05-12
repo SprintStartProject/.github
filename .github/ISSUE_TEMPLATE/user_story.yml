@@ -1,7 +1,7 @@
 name: Feature Request / User Story
 description: Propose a new feature or describe a user story for the backlog
 title: "[Feature]: "
-labels: ["feature", "backlog"]
+labels: ["enhancement"]
 assignees: []
 
 body:
@@ -46,11 +46,5 @@ body:
     id: technical_notes
     attributes:
       label: Technical Notes
-      description: Optional — implementation hints, affected components, API changes,
-        or design constraints.
-
-  - type: textarea
-    id: related
-    attributes:
-      label: Related Issues / PRs / ADRs
-      description: "e.g. #42, SS-011, ADR-003"
+      description: Implementation hints, affected components, API changes, or design
+        constraints.

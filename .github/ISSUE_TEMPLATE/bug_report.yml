@@ -1,7 +1,7 @@
 name: Bug Report
 description: Report a bug or unexpected behavior in SprintStart
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["bug"]
 assignees: []
 
 body:
@@ -80,10 +80,4 @@ body:
     id: cause
     attributes:
       label: Possible Cause
-      description: Optional — any hypothesis on what might be causing this?
-
-  - type: textarea
-    id: related
-    attributes:
-      label: Related Issues / PRs
-      description: "e.g. #42, SS-007"
+      description: Any hypothesis on what might be causing this?

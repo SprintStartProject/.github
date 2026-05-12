@@ -1,0 +1,45 @@
+name: Documentation
+description: Report missing, incorrect, or outdated documentation
+title: "[Docs]: "
+labels: ["documentation"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to report missing, incorrect, or outdated documentation.
+
+  - type: dropdown
+    id: doc_type
+    attributes:
+      label: Type
+      options:
+        - "Missing — documentation does not exist yet"
+        - "Incorrect — documentation contains errors"
+        - "Outdated — documentation no longer reflects current behavior"
+        - "Unclear — documentation exists but is hard to understand"
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Where is the documentation issue? Link or path if known.
+      placeholder: "e.g. https://sprintstart.readthedocs.io/... or
+        docs/dev-manuals/testing/"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is missing, wrong, or unclear? What should it say instead?
+      placeholder: Describe the documentation issue...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Improvement
+      description: Optional — how should the documentation be improved?
