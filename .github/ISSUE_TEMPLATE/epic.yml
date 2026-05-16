@@ -2,6 +2,8 @@ name: Epic
 description: A larger body of work that contains multiple user stories
 title: "[Epic]: "
 labels: ["epic"]
+assignees: []
+
 body:
   - type: markdown
     attributes:
@@ -10,60 +12,43 @@ body:
         Individual user stories will be linked as **sub-issues** of this epic.
 
   - type: textarea
-    id: goal
+    id: epic_description
     attributes:
-      label: Goal / Outcome
-      description: What should be achieved? What is the business value?
-      placeholder: e.g. Users can register and log in securely; login-related support tickets drop by 50%.
+      label: Epic Description
+      description: Describe the overarching goal from the user's or business perspective.
+      placeholder: |
+        As a [role / business],
+        we want to [larger capability],
+        so that [strategic benefit / value].
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: motivation
     attributes:
-      label: Background / Motivation
+      label: Context / Motivation
       description: Why is this epic relevant now? What problem does it solve?
-      placeholder: Currently there is no central authentication; each module handles logins differently.
     validations:
       required: false
 
   - type: textarea
-    id: scope
+    id: acceptance-criteria
     attributes:
-      label: In Scope
-      description: What is included in this epic?
-      value: |
-        - 
-        - 
-    validations:
-      required: false
-
-  - type: textarea
-    id: out-of-scope
-    attributes:
-      label: Out of Scope
-      description: What is explicitly NOT part of this epic?
-      value: |
-        - 
-    validations:
-      required: false
-
-  - type: textarea
-    id: success-criteria
-    attributes:
-      label: Acceptance Criteria / Definition of Done
-      description: How do we know the epic is complete? Use measurable criteria.
+      label: Acceptance Criteria 
+      description: High-level, testable conditions that must be met for this epic to be
+        considered done.
       value: |
         - [ ] 
         - [ ] 
     validations:
-      required: false
+      required: true
 
   - type: textarea
-    id: dependencies
+    id: technical_notes
     attributes:
-      label: Dependencies / Risks
-      description: Other epics, technical prerequisites, or known risks
+      label: Technical Notes
+      description: Architectural considerations, affected components, dependencies,
+        or design constraints across the epic.
       placeholder: Depends on Epic #42; requires Auth Service v2
     validations:
       required: false
@@ -74,5 +59,4 @@ body:
         ---
         **Next steps after creating this epic:**
         1. Set the issue type to `Epic` in the right sidebar (if available)
-        2. Assign it to the relevant project
-        3. Link or create user stories via the **Sub-issues** section
+        2. Link or create user stories via the **Sub-issues** section
